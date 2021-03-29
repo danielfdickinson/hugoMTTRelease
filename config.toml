@@ -1,6 +1,6 @@
-name = "hugoMinimalTestTheme"
-baseURL = "https://example.com/"
-description = "Modules for Hugo Minimal Test Theme"
+name = "hugoMTTRelease"
+baseURL = "https://hugo-minimal-test-theme-demo.wildgarden.ca/"
+description = "Modules for Hugo Minimal Test Theme Release Version (for building actual sites not just for testing)"
 
 [module]
   [module.hugoVersion]

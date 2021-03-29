@@ -1,11 +1,9 @@
-# Hugo Minimal Test Theme
-A minimum test theme to generate the full site of pages for [Hugo Basic Example Site](https://github.com/gohugoio/hugoBasicExample) (and other Hugo sites). Includes option to turn on the test styling (for a more realistic test).
+# Hugo Minimal Test Theme Release Edition
+A theme for [Hugo](https://gohugo.io) based on minimum test theme to generate the full site of pages for [Hugo Basic Example Site](https://github.com/gohugoio/hugoBasicExample) (and other Hugo sites). Enables certain options so that the theme is suitable for using for real sites.
 
 Includes the ability to enable less minimal features via custom layouts (with thanks to members of the [Hugo Forum](https://discourse.gohugo.io) for their suggestions).
 
-The purpose of the repo is not for CI or automated testing, but to have a set of layouts for creating minimum reproducible test cases for reporting bugs to the Hugo developers.
-
-See [License](https://github.com/danielfdickinson/hugoMinimalTestTheme/blob/master/LICENSE) for permissions on use.
+See [License](https://github.com/danielfdickinson/hugoMTTRelease/blob/master/LICENSE) for permissions on use.
 
 ## Modern Hugo Only (as of 2021-03-17)
 
@@ -118,7 +116,7 @@ add ``{{\< hello-world>}}`` to a **content** file (not template).
 
  Enjoy!
 
-## Change Debug Table from Development Only
+## Change Debug Table from Custom Only
 
 See full [hugoDebugTable README.md](https://github.com/danielfdickinson/hugoDebugTables/blob/master/README.md)
 for information on using the debug table included in this theme.
@@ -128,7 +126,7 @@ In ``config.toml`` add
 
 ```toml
 [params]
-     debugTableEnvironment = ["development","production"]
+     debugTableEnvironment = ["custom","production"]
 ```
 
 ### To never include in builds
@@ -138,18 +136,17 @@ In ``config.toml`` add
      debugTableEnvironment = [""]
 ```
 
-**NB** The ``""`` is required because an empty slice (or no param) defaults to ``["development"]``
+**NB** The ``""`` is required because an empty slice (or no param) defaults to ``["custom"]``
 
-### You can also use custom environments
-
+### You can also use for development
 In ``config.toml`` add
 
 ```toml
 [params]
-     debugTableEnvironment = ["custom1","custom2"]
+     debugTableEnvironment = ["development"]
 ```
 
-And of course if you wanted you could add ``"development"`` and/or ``"production"``
+And of course if you wanted you could add ``"custom"`` and/or ``"production"``
 
 ## Params for parts of the layout
 To disable some layout in the table below:
@@ -164,19 +161,20 @@ In ``config.toml`` add
 | Param                    | Description                                    |
 |--------------------------|------------------------------------------------|
 | showTopBar               | If false, do not show top menu bar             |
-| testStylesInclude        | If true adds old browser warning because the offending styles are also enabled (see below). |
+| testStylesInclude        | If false does not add old browser warning because the offending styles are also disabled (see below). |
+| useDebugTables           | If true use the Debug Tables layouts           |
 
 ## Test CSS Styling
 
 To make the theme more 'real' a silly basic style has been added (using 'Comic Sans MS' font no less!). The styling does require a modern browser (that means no Internet Explorer; not even IE11).
 
-To enable the styles:
+To disable the styles:
 
 In ``config.toml`` add
 
 ```toml
 [params]
-     testStylesInclude = true
+     testStylesInclude = false
 ```
 ### For the Debug Tables
 

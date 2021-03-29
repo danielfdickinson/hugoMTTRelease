@@ -16,5 +16,7 @@
         <div class="powered-by-wrapper-test-min"><span class="powered-by-label-test-min">Powered by</span> <a class="powered-by-link-test-min" href="https://hugo-minimal-test-theme-demo.wildtechgarden.ca">Hugo Minimal Test Theme</a></div>
     </div>
 
+{{- if eq (.Param "useDebugTables") true -}}
 {{ partial "helpers/debug-tables/debug-tables-list" . -}}
+{{- end -}}
 </footer>

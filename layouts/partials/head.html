@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <title>{{- partial "return-helpers/title" . -}}</title>
-    {{- if eq (.Param "testStylesInclude") true -}}
+    {{- if ne (.Param "testStylesInclude") false -}}
     {{ partial "helpers/debug-tables/debug-head-snippet" . }}
     <link rel="stylesheet" href="/css/hugo-test-minimal.css" />
     <link rel="stylesheet" href="/css/hugo-test-minimal-old.css" />
