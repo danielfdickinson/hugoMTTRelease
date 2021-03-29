@@ -1,4 +1,4 @@
-module github.com/danielfdickinson/hugoMinimalTestTheme
+module github.com/danielfdickinson/hugoMTTRelease
 
 go 1.14
 
