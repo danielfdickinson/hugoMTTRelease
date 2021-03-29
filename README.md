@@ -70,13 +70,12 @@ add ``{{\< hello-world>}}`` to a **content** file (not template).
    ```
    [module]
      [[module.imports]]
-        path = "github.com/danielfdickinson/hugoMinimalTestTheme"
+        path = "github.com/danielfdickinson/hugoMTTRelease"
    ```
 3. Change back to the site directory
 4. Get the module
    ```
-   hugo mod get github.com/danielfdickinson/hugoMinimalTestTheme
-   ```
+   hugo mod get github.com/danielfdickinson/hugoMTTRelease   ```
 5. To test the result, run the local Hugo server
    ```
    hugo server -b http://localhost:1313/
@@ -89,12 +88,12 @@ add ``{{\< hello-world>}}`` to a **content** file (not template).
    cd themes
    ```
 
-2. Obtain a copy of the theme e.g. ([a theme Zip file from Github](https://github.com/danielfdickinson/hugoMinimalTestTheme/archive/master.zip))
-3. Copy/extract the theme into hugoMinimalTestTheme in the themes directory
+2. Obtain a copy of the theme e.g. ([a theme Zip file from Github](https://github.com/danielfdickinson/hugoMTTRelease/archive/master.zip))
+3. Copy/extract the theme into hugoMTTRelease in the themes directory
 4. Change back to the site directory
 5. To test the result, run the local Hugo server
    ```
-   hugo server -t hugoMinimalTestTheme -b http://localhost:1313/
+   hugo server -t hugoMTTRelease -b http://localhost:1313/
    ```
 ### Using git submodules (deprecated)
 
@@ -104,14 +103,14 @@ add ``{{\< hello-world>}}`` to a **content** file (not template).
    cd themes
    ```
 
-2. In the themes directory, add hugoMinimalTestTheme as a submodule
+2. In the themes directory, add hugoMTTRelease as a submodule
    ```
-   git submodule add -f https://github.com/danielfdickinson/hugoMinimalTestTheme.git
+   git submodule add -f https://github.com/danielfdickinson/hugoMTTRelease.git
    ```
 3. Change back to the site directory
 4. To test the result, run the local Hugo server
    ```
-   hugo server -t hugoMinimalTestTheme -b http://localhost:1313/
+   hugo server -t hugoMTTRelease -b http://localhost:1313/
    ```
 
  Enjoy!
