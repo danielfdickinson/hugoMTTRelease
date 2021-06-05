@@ -1,5 +1,5 @@
-module git.wildtechgarden.ca/danielfdickinson/hugoMTTRelease
+module gitea.wildtechgarden.ca/danielfdickinson/hugoMTTRelease
 
 go 1.14
 
-require git.wildtechgarden.ca/danielfdickinson/hugoDebugTables v0.1.4 // indirect
+require gitea.wildtechgarden.ca/danielfdickinson/hugoDebugTables v0.1.6 // indirect
