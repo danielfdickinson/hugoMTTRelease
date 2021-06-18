@@ -1,6 +1,6 @@
 name = "HugoMTTRelease"
 license = "MIT"
-licenselink = "https://git.wildtechgarden.ca/danielfdickinson/hugoMTTRelease/src/branch/master/LICENSE"
+licenselink = "https://github.com/danielfdickinson/hugoMTTRelease/blob/master/LICENSE"
 description = "A minimal theme to based on a testing theme, with defaults suitable for building real sites using the optional silly little CSS style thrown in for free."
 homepage = "http://hugo-minimal-test-theme-demo.wildtechgarden.ca/"
 tags = ["test","minimal","light","minimalist","fast","syntax highlighting","demo","debug","debug tool"]
