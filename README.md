@@ -1,4 +1,11 @@
 # Hugo Minimal Test Theme Release Edition
+
+## ARCHIVED
+
+This project is no longer maintained.
+
+## Original Intro
+
 A theme for [Hugo](https://gohugo.io) based on minimum test theme to generate the full site of pages for [Hugo Basic Example Site](https://github.com/gohugoio/hugoBasicExample) (and other Hugo sites). Enables certain options so that the theme is suitable for using for real sites.
 
 Includes the ability to enable less minimal features via custom layouts (with thanks to members of the [Hugo Forum](https://discourse.gohugo.io) for their suggestions).
